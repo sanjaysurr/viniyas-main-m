@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinyas Constructions & Developers | Architectural Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                beige: '#E6DED3',
+                ivory: '#FAF7F2',
+                brown: '#3B2F2F',
+                olive: '#6B705C',
+                copper: '#B87333',
+                charcoal: '#1F1F1F',
+              }
+            },
+            letterSpacing: {
+              widest: '.2em',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Navigation -->
+      <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 h-20 md:h-24 bg-white shadow-md border-b border-brand-beige">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+          <div class="flex items-center cursor-pointer bg-brand-ivory p-1 rounded">
+            <img src="img/WhatsApp Image 2026-02-24 at 5.58.26 PM.jpeg" alt="Vinyas logo" class="h-24 w-auto object-contain" />
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex space-x-10 items-center">
+            <a href="#home" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Home</a>
+            <a href="#about" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">About</a>
+            <a href="service.html" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Services</a>
+            <a href="#process" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Process</a>
+            <a href="#connect" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Connect</a>
+            <a href="#connect" class="bg-brand-brown text-brand-ivory font-space px-6 py-3 text-[10px] tracking-widest uppercase rounded-sm hover:bg-brand-copper transition-all duration-300 inline-block">
+              Book Consultation
+            </a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden text-brand-charcoal focus:outline-none">
+            <i data-lucide="menu" id="menu-icon"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-ivory border-t border-brand-beige shadow-2xl py-8 px-6 flex flex-col space-y-6">
+          <a href="#home" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide">Home</a>
+          <a href="#about" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide">About</a>
+          <a href="service.html" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide">Services</a>
+          <a href="#process" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide">Process</a>
+          <a href="#connect" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide">Connect</a>
+          <button class="w-full bg-brand-copper text-brand-ivory font-space py-4 text-sm tracking-widest uppercase rounded-sm">
+            Contact Us
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="home" class="relative h-[90vh] md:h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 scale-110">
+          <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-60 brightness-90">
+            <!-- Desktop Video -->
+            <source src="videos/laptop.mp4"  type="video/mp4">
+            <!-- Mobile Video -->
+            <source src="videos/mobile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <!-- </div>
+        <div class="relative z-10 max-w-5xl text-center px-6 space-y-10 fade-in">
+          <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase mb-4">Precision Engineering Since 1994</span>
+          <h1 class="font-playfair text-3xl md:text-6xl text-brand-brown font-semibold leading-[1.1] uppercase tracking-tight">
+            Building Modern Karnataka with <br class="hidden md:block"/> 
+            <span class="italic font-normal">Design Intelligence</span>
+          </h1>
+          <p class="font-inter text-base md:text-lg text-brand-charcoal/80 max-w-2xl mx-auto leading-relaxed">
+            We don't just build structures; we architect experiences. Every beam, every brick, and every layout is calculated for longevity and purpose.
+          </p>
+          <div class="pt-4 flex flex-col md:flex-row items-center justify-center gap-6">
+            <a href="#services" class="bg-brand-copper text-brand-ivory font-space px-10 py-5 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-brown transition-all shadow-xl hover:-translate-y-1">
+              Explore Our Expertise
+            </a>
+            <a href="#about" class="text-brand-brown font-space text-xs tracking-widest uppercase flex items-center gap-2 hover:gap-4 transition-all">
+              Our Legacy <i data-lucide="arrow-right" class="w-4"></i>
+            </a>
+          </div> -->
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+           <i data-lucide="chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 md:py-32 px-4 md:px-6 bg-brand-ivory">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+          <div class="space-y-8">
+            <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Our Heritage</span>
+            <h2 class="font-playfair text-3xl md:text-5xl text-brand-brown uppercase tracking-tight leading-tight">
+              Three Decades of Architectural Mastery
+            </h2>
+            <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+              Founded in 1994, Vinyas has been at the forefront of Karnataka's architectural evolution. Our portfolio spans from intimate residential sanctuaries to expansive commercial complexes, each bearing our signature of timeless design and structural integrity.
+            </p>
+            <div class="grid grid-cols-2 gap-8 pt-8">
+              <div>
+                <h3 class="font-playfair text-4xl text-brand-copper">30+</h3>
+                <p class="font-space text-[10px] text-brand-charcoal/60 tracking-widest uppercase">Years Experience</p>
+              </div>
+              <div>
+                <h3 class="font-playfair text-4xl text-brand-copper">150+</h3>
+                <p class="font-space text-[10px] text-brand-charcoal/60 tracking-widest uppercase">Projects Delivered</p>
+              </div>
+              <div>
+                <h3 class="font-playfair text-4xl text-brand-copper">5M+</h3>
+                <p class="font-space text-[10px] text-brand-charcoal/60 tracking-widest uppercase">Sq Ft Built</p>
+              </div>
+              <div>
+                <h3 class="font-playfair text-4xl text-brand-copper">98%</h3>
+                <p class="font-space text-[10px] text-brand-charcoal/60 tracking-widest uppercase">Client Retention</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Founder 1 -->
+            <div class="space-y-3 group">
+              <img 
+                src="img/dad.jpeg"
+                alt="Founder 1"
+                class="w-48 h-64 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 shadow-lg cursor-pointer"
+              />
+              <div class="text-center bg-brand-brown/10 p-3 rounded-lg">
+                <p class="font-playfair text-lg text-brand-brown font-semibold">Manjunath</p>
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Founder & CEO</p>
+              </div>
+            </div>
+            
+            <!-- Founder 2 -->
+            <div class="space-y-3 group">
+              <img 
+                src="img/viniyas.jpeg"
+                alt="Founder 2"
+                class="w-full h-64 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 shadow-lg cursor-pointer"
+              />
+              <div class="text-center bg-brand-brown/10 p-3 rounded-lg">
+                <p class="font-playfair text-lg text-brand-brown font-semibold">Vinyas</p>
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Co-Founder & Architect</p>
+              </div>
+            </div>
+            
+            <!-- Founder 3 -->
+            <div class="space-y-3 group">
+              <img 
+                src="img/harshi.jpeg"
+                alt="Founder 3"
+                class="w-full h-64 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 shadow-lg cursor-pointer"
+              />
+              <div class="text-center bg-brand-brown/10 p-3 rounded-lg">
+                <p class="font-playfair text-lg text-brand-brown font-semibold">Harshitha</p>
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Co-Founder & Engineer</p>
+              </div>
+            </div>
+            
+            <!-- Founder 4 -->
+            <div class="space-y-3 group">
+              <img 
+                src="img/raj.jpeg"
+                alt="Founder 4"
+                class="w-full h-64 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 shadow-lg cursor-pointer"
+              />
+              <div class="text-center bg-brand-brown/10 p-3 rounded-lg">
+                <p class="font-playfair text-lg text-brand-brown font-semibold">Goutham</p>
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Co-Founder & Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Services Section -->
+      <section id="services" class="py-20 md:py-32 px-4 md:px-6 bg-brand-charcoal">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-20">
+            <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Our Expertise</span>
+            <h2 class="font-playfair text-3xl md:text-5xl text-brand-ivory uppercase tracking-tight mt-4">Comprehensive Development Solutions</h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Planning & Architectural Design -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop"
+                  alt="Planning and architectural design visual"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Planning & Architectural Design</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                 Engineering-backed, purpose-driven designs focused on space efficiency, ventilation, natural light, and long-term usability - built on logic, not assumptions.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Interior Design & Execution -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=2000&auto=format&fit=crop"
+                  alt="Interior design and execution visual"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Interior Design & Execution</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  Our interior designs are created to support daily living, not short-term trends. We handle complete interior planning and execution with attention to comfort, material quality, detailing, and maintenance — design that feels right today and lasts tomorrow.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Residential Construction -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2000&auto=format&fit=crop"
+                  alt="Residential construction home exterior"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Residential Construction</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  We design and build independent houses, villas, duplexes, and modern homes that reflect your lifestyle and future needs. Every home is planned with strong RCC structure, ventilation, and thoughtful layouts — planned honestly, built responsibly.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Commercial Construction -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad3ab?q=80&w=2000&auto=format&fit=crop"
+                  alt="Commercial construction building"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Commercial Construction</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  From offices to retail and mixed-use spaces, our commercial projects focus on durability, load planning, and efficient layouts that support long-term business growth — durability you can depend on.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Apartments & Housing Projects -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2000&auto=format&fit=crop"
+                  alt="Apartments and housing projects"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Apartments & Housing Projects</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  We undertake small and medium apartment projects with smart space planning, safety standards, parking logic, and resale-focused design — smart layouts with strong resale value.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Concept Homes & Designer Projects -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1512914890250-353c97c9e7e2?q=80&w=2000&auto=format&fit=crop"
+                  alt="Concept homes and designer projects"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Concept Homes & Designer Projects</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  For clients who want something distinctive, we create concept-driven homes with unique architectural identity and controlled execution — creative ideas with controlled execution.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Farmhouses -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop"
+                  alt="Farmhouse architecture"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Farmhouses</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  Our farmhouse projects blend comfort with nature through sustainable layouts, open spaces, and landscape-friendly planning — respecting land while enhancing living.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Resorts & Hospitality Projects -->
+            <div class="service-card overflow-hidden bg-brand-ivory group">
+              <div class="relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000&auto=format&fit=crop"
+                  alt="Resorts and hospitality projects"
+                  class="w-full h-80 object-cover grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="font-playfair text-2xl text-brand-brown uppercase mb-4">Resorts & Hospitality Projects</h3>
+                <p class="font-inter text-sm text-brand-charcoal/70 mb-6">
+                  We design hospitality spaces that balance guest experience with operational practicality and long-term returns — designing comfort and delivering returns.
+                </p>
+                <a href="#" class="text-brand-copper font-space text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                  Learn More <i data-lucide="arrow-right" class="w-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section id="process" class="py-20 md:py-32 px-4 md:px-6 bg-brand-ivory">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-20">
+            <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Our Methodology</span>
+            <h2 class="font-playfair text-3xl md:text-5xl text-brand-brown uppercase tracking-tight mt-4">Our Process</h2>
+            <p class="font-inter text-base text-brand-charcoal/70 max-w-2xl mx-auto mt-4">
+              Our process is designed to remove confusion and build confidence.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-4 gap-12">
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">01</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Understanding You</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Understanding you, your land, and your vision.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">02</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Planning & Design</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Planning &amp; architectural design tailored to your site and goals.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">03</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Structural Planning</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Engineer-based structural planning for safety and longevity.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">04</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Purpose-Driven Design</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Purpose-driven architectural &amp; interior design for daily living.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">05</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Transparent Costs</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Transparent cost planning with no hidden surprises.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">06</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Quality Execution</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Quality execution with site supervision and material checks.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">07</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Confident Handover</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">Handover with confidence, documentation, and clarity.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="bg-brand-beige w-16 h-16 mx-auto rounded-full flex items-center justify-center text-brand-copper font-playfair text-2xl">08</div>
+              <h3 class="font-playfair text-xl text-brand-brown uppercase">Structured Progress</h3>
+              <p class="font-inter text-sm text-brand-charcoal/70">No surprises — only structured progress at every stage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust & Promise Section -->
+      <section class="py-20 md:py-32 px-4 md:px-6 bg-brand-charcoal relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none opacity-10">
+          <div class="w-[600px] h-[600px] rounded-full border border-brand-copper/20 absolute -right-40 -bottom-40"></div>
+        </div>
+        <div class="relative max-w-6xl mx-auto">
+          <div class="max-w-xl mb-10 md:mb-12">
+            <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Trust &amp; Promise</span>
+            <h2 class="font-playfair text-3xl md:text-5xl text-brand-ivory uppercase tracking-tight mt-4">
+              Our Promise to Every Client
+            </h2>
+          </div>
+          <div class="bg-brand-ivory/5 border border-brand-ivory/10 rounded-xl p-8 md:p-12 grid md:grid-cols-2 gap-10 md:gap-14">
+            <div class="space-y-6">
+              <p class="font-inter text-base text-brand-ivory/80 leading-relaxed">
+                We believe that true trust is built in the way we think, plan, and execute your project.
+              </p>
+              <p class="font-inter text-sm text-brand-ivory/60 italic">
+                “Trust is not claimed. It is earned on site.”
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 w-6 h-6 rounded-full border border-brand-copper/60 flex items-center justify-center">
+                  <i data-lucide="check" class="w-3 h-3 text-brand-copper"></i>
+                </div>
+                <p class="font-inter text-sm text-brand-ivory/85">We will explain every plan, design, and cost clearly.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 w-6 h-6 rounded-full border border-brand-copper/60 flex items-center justify-center">
+                  <i data-lucide="check" class="w-3 h-3 text-brand-copper"></i>
+                </div>
+                <p class="font-inter text-sm text-brand-ivory/85">We will never hide materials or specifications.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 w-6 h-6 rounded-full border border-brand-copper/60 flex items-center justify-center">
+                  <i data-lucide="check" class="w-3 h-3 text-brand-copper"></i>
+                </div>
+                <p class="font-inter text-sm text-brand-ivory/85">We will respect your money like our own.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 w-6 h-6 rounded-full border border-brand-copper/60 flex items-center justify-center">
+                  <i data-lucide="check" class="w-3 h-3 text-brand-copper"></i>
+                </div>
+                <p class="font-inter text-sm text-brand-ivory/85">We will build exactly what we promise.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 w-6 h-6 rounded-full border border-brand-copper/60 flex items-center justify-center">
+                  <i data-lucide="check" class="w-3 h-3 text-brand-copper"></i>
+                </div>
+                <p class="font-inter text-sm text-brand-ivory/85">We will stand by our work even after handover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   <!-- Connect Section -->
+<section id="connect" class="py-20 md:py-32 px-4 md:px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- Karnataka Connect Copy -->
+    <div class="space-y-8">
+      <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Karnataka Connect</span>
+      <h2 class="font-playfair text-5xl text-brand-brown uppercase tracking-tight">We Build for Karnataka</h2>
+      <p class="font-inter text-base text-brand-charcoal/80 leading-relaxed">
+        We understand Karnataka’s climate, soil conditions, lifestyle needs, and evolving aspirations.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-brand-ivory border border-brand-beige rounded-lg p-8 shadow-xl">
+      <h3 class="font-playfair text-3xl text-brand-brown uppercase tracking-tight mb-6">
+        Request a Consultation
+      </h3>
+
+      <!-- ✅ IMPORTANT: Added ID -->
+      <form id="consultation-form" class="space-y-6">
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">Full Name</label>
+            <input type="text" name="full_name" required
+              class="w-full border-b py-2 focus:outline-none" />
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">WhatsApp Number</label>
+            <input type="tel" name="whatsapp" required
+              class="w-full border-b py-2 focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">Email</label>
+            <input type="email" name="email"
+              class="w-full border-b py-2 focus:outline-none" />
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">City</label>
+            <input type="text" name="city"
+              class="w-full border-b py-2 focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="font-space text-[10px] uppercase">Site / Land Location</label>
+          <input type="text" name="location"
+            class="w-full border-b py-2 focus:outline-none" />
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">Project Type</label>
+            <select name="project_type"
+              class="w-full border-b py-2 focus:outline-none">
+              <option value="">Select</option>
+              <option value="Residential">Residential Home / Villa</option>
+              <option value="Interior">Interior Design</option>
+              <option value="Apartment">Apartments</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Farmhouse">Farmhouse</option>
+              <option value="Resort">Resort</option>
+            </select>
+          </div>
+
+          <div class="space-y-2">
+            <label class="font-space text-[10px] uppercase">Approx. Budget</label>
+            <select name="budget"
+              class="w-full border-b py-2 focus:outline-none">
+              <option value="">Select</option>
+              <option value="50-75L">₹50L – ₹75L</option>
+              <option value="75L-1Cr">₹75L – ₹1Cr</option>
+              <option value="1-2Cr">₹1Cr – ₹2Cr</option>
+              <option value="2Cr+">₹2Cr+</option>
+              <option value="Not Sure">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="font-space text-[10px] uppercase">Tell Us About Your Project</label>
+          <textarea name="message" rows="4"
+            class="w-full border-b py-2 focus:outline-none"></textarea>
+        </div>
+
+        <div class="flex items-start gap-3 pt-2">
+          <input type="checkbox" name="consent" value="Yes" required />
+          <p class="text-xs">
+            I agree to be contacted by Vinyas Constructions & Developers.
+          </p>
+        </div>
+
+        <div class="pt-4">
+          <button type="submit"
+            class="w-full bg-brand-brown text-white py-4 text-xs uppercase">
+            Request Free Consultation
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+      <!-- Project Gallery Section -->
+      <section class="py-20 md:py-32 px-4 md:px-6 bg-gradient-to-br from-brand-beige to-brand-ivory relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+          <div class="absolute top-10 left-10 w-32 h-32 border-2 border-brand-copper rounded-full"></div>
+          <div class="absolute bottom-20 right-20 w-48 h-48 border-2 border-brand-brown rounded-full"></div>
+          <div class="absolute top-1/2 left-1/3 w-24 h-24 border-2 border-brand-olive rotate-45"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <span class="font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Our Portfolio</span>
+            <h2 class="font-playfair text-4xl md:text-6xl text-brand-brown uppercase tracking-tight mt-4 mb-6">
+              Completed Projects
+            </h2>
+            <p class="font-inter text-base text-brand-charcoal/70 max-w-2xl mx-auto">
+              Explore our collection of thoughtfully designed and expertly constructed spaces across Karnataka.
+            </p>
+          </div>
+          
+          <!-- Scrollable Image Gallery -->
+          <div class="relative">
+            <div class="flex gap-6 overflow-x-auto pb-6 scroll-smooth scrollbar-hide">
+              <!-- Image 1 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                     data-src="img/img1.jpeg" 
+                     data-title="Modern Villa" 
+                     data-description="Mysuru • 4,500 sq ft">
+                  <img 
+                    src="img/img1.jpeg" 
+                    alt="Modern Residential Home"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Modern Villa</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 4,500 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 2 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                     data-src="img/img2.jpeg" 
+                     data-title="Luxury Interior" 
+                     data-description="Bengaluru • 3,200 sq ft">
+                  <img 
+                    src="img/img2.jpeg" 
+                    alt="Luxury Interior"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Luxury Interior</h3>
+                      <p class="font-inter text-sm text-white/80">Bengaluru • 3,200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 3 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img3.jpeg" 
+                    alt="Commercial Building"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Commercial Complex</h3>
+                      <p class="font-inter text-sm text-white/80">Hassan • 8,000 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 4 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img4.jpeg" 
+                    alt="Apartment Complex"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Apartment Complex</h3>
+                      <p class="font-inter text-sm text-white/80">Tumakuru • 12 Units</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 5 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img5.jpeg" 
+                    alt="Interior Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Interior Design</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 2,800 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 6 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img6.jpeg" 
+                    alt="Office Building"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Office Building</h3>
+                      <p class="font-inter text-sm text-white/80">K.R. Nagar • 5,500 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 7 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img7.jpeg" 
+                    alt="Resort Project"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Resort Project</h3>
+                      <p class="font-inter text-sm text-white/80">Nanjangud • 15 Acres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 8 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img8.jpeg" 
+                    alt="Farmhouse"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Farmhouse</h3>
+                      <p class="font-inter text-sm text-white/80">Chamarajanagar • 3 Acres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 9 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img9.jpeg" 
+                    alt="Duplex Home"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Duplex Home</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 3,600 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 10 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img10.jpeg" 
+                    alt="Contemporary Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Contemporary Design</h3>
+                      <p class="font-inter text-sm text-white/80">Bengaluru • 4,200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 11 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img11.jpeg" 
+                    alt="Traditional Home"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Traditional Home</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 3,800 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 12 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img12.jpeg" 
+                    alt="Modern Kitchen"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Modern Kitchen</h3>
+                      <p class="font-inter text-sm text-white/80">Bengaluru • 1,200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 13 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img13.jpeg" 
+                    alt="Bedroom Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Bedroom Design</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 450 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 14 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img14.jpeg" 
+                    alt="Living Room"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Living Room</h3>
+                      <p class="font-inter text-sm text-white/80">Hassan • 680 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 15 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img15.jpeg" 
+                    alt="Bathroom Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Bathroom Design</h3>
+                      <p class="font-inter text-sm text-white/80">Tumakuru • 180 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 16 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img16.jpeg" 
+                    alt="Exterior Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Exterior Design</h3>
+                      <p class="font-inter text-sm text-white/80">K.R. Nagar • 5,200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 17 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img17.jpeg" 
+                    alt="Garden Space"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Garden Space</h3>
+                      <p class="font-inter text-sm text-white/80">Nanjangud • 2,500 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 18 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img18.jpeg" 
+                    alt="Swimming Pool"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Swimming Pool</h3>
+                      <p class="font-inter text-sm text-white/80">Chamarajanagar • 800 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 19 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img19.jpeg" 
+                    alt="Terrace Garden"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Terrace Garden</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 1,200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 20 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img20.jpeg" 
+                    alt="Parking Area"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Parking Area</h3>
+                      <p class="font-inter text-sm text-white/80">Bengaluru • 600 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 21 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img21.jpeg" 
+                    alt="Staircase Design"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Staircase Design</h3>
+                      <p class="font-inter text-sm text-white/80">Mysuru • 240 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 22 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img22.jpeg" 
+                    alt="Balcony Space"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Balcony Space</h3>
+                      <p class="font-inter text-sm text-white/80">Hassan • 180 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 23 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img23.jpeg" 
+                    alt="Pooja Room"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Pooja Room</h3>
+                      <p class="font-inter text-sm text-white/80">Tumakuru • 80 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 24 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img24.jpeg" 
+                    alt="Study Room"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Study Room</h3>
+                      <p class="font-inter text-sm text-white/80">K.R. Nagar • 150 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 25 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img25.jpeg" 
+                    alt="Kids Room"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Kids Room</h3>
+                      <p class="font-inter text-sm text-white/80">Nanjangud • 200 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Image 26 -->
+              <div class="flex-none w-80 md:w-96 group">
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="img/img26.jpeg" 
+                    alt="Guest Room"
+                    class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 right-4">
+                      <h3 class="font-playfair text-xl text-white uppercase">Guest Room</h3>
+                      <p class="font-inter text-sm text-white/80">Chamarajanagar • 220 sq ft</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 bg-brand-copper/80 text-white p-3 rounded-full shadow-lg hover:bg-brand-copper transition-all duration-300 hidden md:flex">
+              <i data-lucide="chevron-left" class="w-5 h-5"></i>
+            </button>
+            <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 bg-brand-copper/80 text-white p-3 rounded-full shadow-lg hover:bg-brand-copper transition-all duration-300 hidden md:flex">
+              <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+          </div>
+          
+          <div class="text-center mt-12">
+            <button onclick="testLightbox()" class="bg-red-500 text-white px-4 py-2 rounded mb-4">View all Projects </button>
+            <br>
+            <a href="#connect" class="bg-brand-copper text-brand-ivory font-space px-10 py-5 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-brown transition-all shadow-xl hover:-translate-y-1 inline-flex items-center gap-3">
+              Start Your Project
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm">
+        <div class="relative h-full flex items-center justify-center p-4">
+          <!-- Close Button -->
+          <button id="lightbox-close" class="absolute top-4 right-4 text-white/80 hover:text-white transition-colors p-2">
+            <i data-lucide="x" class="w-8 h-8"></i>
+          </button>
+          
+          <!-- Fullscreen Button -->
+          <button id="fullscreen-toggle" class="absolute top-4 left-4 text-white/80 hover:text-white transition-colors p-2">
+            <i data-lucide="maximize" class="w-6 h-6"></i>
+          </button>
+          
+          <!-- Previous Button -->
+          <button id="lightbox-prev" class="absolute left-4 text-white/80 hover:text-white transition-colors p-2">
+            <i data-lucide="chevron-left" class="w-8 h-8"></i>
+          </button>
+          
+          <!-- Next Button -->
+          <button id="lightbox-next" class="absolute right-4 text-white/80 hover:text-white transition-colors p-2">
+            <i data-lucide="chevron-right" class="w-8 h-8"></i>
+          </button>
+          
+          <!-- Image Container -->
+          <div class="max-w-6xl max-h-[90vh]">
+            <img id="lightbox-image" src="" alt="" class="max-w-full max-h-[90vh] object-contain">
+            <div class="text-center mt-4">
+              <h3 id="lightbox-title" class="font-playfair text-2xl text-white uppercase"></h3>
+              <p id="lightbox-description" class="font-inter text-white/80 mt-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-brand-charcoal py-20 px-6 border-t border-brand-ivory/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+          <div class="space-y-6">
+            <div class="flex flex-col">
+              <span class="font-playfair font-bold text-2xl tracking-tighter text-brand-ivory uppercase">Vinyas</span>
+              <span class="text-[10px] font-space tracking-[0.4em] text-brand-ivory/40 uppercase">Constructions & Developers</span>
+            </div>
+            <p class="text-[10px] font-space text-brand-ivory/30 tracking-widest uppercase"> 2024 Vinyas Developers. Built with Heritage.</p>
+          </div>
+          <div class="flex gap-10">
+             <div class="space-y-2">
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Office</p>
+                <p class="text-sm text-brand-ivory/60 font-inter max-w-[200px]">Vinaya Marga, Siddartha Layout, Mysuru, KA 570011</p>
+             </div>
+             <div class="space-y-2 text-right">
+                <p class="font-space text-[10px] text-brand-copper tracking-widest uppercase">Inquiries</p>
+                <p class="text-sm text-brand-ivory/60 font-inter">+91 91234 56789</p>
+             </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+document.getElementById("consultation-form")
+.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm(
+    "service_zpl25yd",
+    "template_mt71bv6",
+    this,
+    "JEkbnfOA5RJHuy1Lc"
+  ).then(function(response) {
+    alert("Consultation request sent successfully!");
+    document.getElementById("consultation-form").reset();
+  }, function(error) {
+    console.log("FAILED", error);
+    alert("Error: " + error.text);
+  });
+});
+</script>
+  </body>
+</html>
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Vinyas Constructions & Developers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                beige: '#E6DED3',
+                ivory: '#FAF7F2',
+                brown: '#3B2F2F',
+                olive: '#6B705C',
+                copper: '#B87333',
+                charcoal: '#1F1F1F',
+              }
+            },
+            letterSpacing: {
+              widest: '.2em',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Navigation -->
+      <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-4 md:py-6 bg-brand-ivory shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+          <div class="flex flex-col group cursor-pointer">
+            <a href="index.html" class="font-playfair font-bold text-xl md:text-2xl tracking-tighter text-brand-brown uppercase hover:text-brand-copper transition-colors">
+              Vinyas
+            </a>
+            <span class="text-[9px] font-space tracking-[0.4em] text-brand-brown/70 uppercase">
+              Constructions & Developers
+            </span>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex space-x-10 items-center">
+            <a href="index.html" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Home</a>
+            <a href="index.html#about" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">About</a>
+            <a href="service.html" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Services</a>
+            <a href="index.html#process" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Process</a>
+            <a href="index.html#connect" class="font-space text-[11px] text-brand-charcoal hover:text-brand-copper transition-colors tracking-widest uppercase">Connect</a>
+            <button class="bg-brand-brown text-brand-ivory font-space px-6 py-3 text-[10px] tracking-widest uppercase rounded-sm hover:bg-brand-copper transition-all duration-300">
+              Book Consultation
+            </button>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden text-brand-charcoal focus:outline-none">
+            <i data-lucide="menu" id="menu-icon"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-ivory border-t border-brand-beige shadow-2xl py-8 px-6 flex flex-col space-y-6">
+          <a href="index.html" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide hover:text-brand-copper">Home</a>
+          <a href="index.html#about" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide hover:text-brand-copper">About</a>
+          <a href="#services" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide hover:text-brand-copper">Services</a>
+          <a href="index.html#process" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide hover:text-brand-copper">Process</a>
+          <a href="index.html#connect" class="mobile-link font-playfair text-xl text-brand-charcoal tracking-wide hover:text-brand-copper">Connect</a>
+          <button class="w-full bg-brand-copper text-brand-ivory font-space py-4 text-sm tracking-widest uppercase rounded-sm hover:bg-brand-brown transition-all">
+            Contact Us
+          </button>
+        </div>
+      </nav>
+
+      <!-- Page Title Section -->
+      <section class="pt-32 pb-16 bg-brand-ivory">
+        <div class="max-w-7xl mx-auto px-6">
+          <h1 class="font-playfair text-4xl md:text-5xl text-brand-brown font-semibold uppercase tracking-tight mb-4">
+            Our Services
+          </h1>
+          <p class="font-inter text-lg text-brand-charcoal/70 max-w-2xl">
+            Comprehensive construction and development solutions tailored to your vision
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Container -->
+      <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Service 1: Residential Construction -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Image -->
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" 
+                alt="Residential Construction"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+            <!-- Right: Content -->
+            <div class="order-1 md:order-2 space-y-6">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service One</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Residential Construction
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                We create homes that combine architectural beauty with functional excellence. From contemporary villas to traditional designs, every residential project reflects our commitment to quality and attention to detail.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Premium material sourcing and quality control</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Customized floor plans and layouts</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Sustainable and eco-friendly construction methods</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 2: Commercial Developments -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Content -->
+            <div class="space-y-6 order-1 md:order-1">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Two</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Commercial Developments
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Our commercial expertise spans office complexes, retail spaces, and mixed-use developments. We design and build spaces that enhance business operations and drive growth.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Modern infrastructure and smart building systems</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Energy-efficient HVAC and electrical systems</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Flexible design for future scalability</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+            <!-- Right: Image -->
+            <div class="order-2 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1000&auto=format&fit=crop" 
+                alt="Commercial Developments"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 3: Infrastructure Projects -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Image -->
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1581578731548-c64695d952e5?q=80&w=1000&auto=format&fit=crop" 
+                alt="Infrastructure Projects"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+            <!-- Right: Content -->
+            <div class="order-1 md:order-2 space-y-6">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Three</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Infrastructure Projects
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Large-scale infrastructure initiatives require precision engineering and extensive project management. We specialize in delivering complex projects on time and within budget.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Expert project management and team coordination</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Advanced construction methodologies</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Compliance with all regulatory standards</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 4: Renovation & Remodeling -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Content -->
+            <div class="space-y-6 order-1 md:order-1">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Four</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Renovation & Remodeling
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Breathe new life into existing structures with our comprehensive renovation and remodeling services. We blend modern design with structural integrity to transform spaces.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Architectural redesign and modernization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Structural assessment and upgrades</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Minimal disruption during renovation</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+            <!-- Right: Image -->
+            <div class="order-2 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" 
+                alt="Renovation & Remodeling"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 5: Interior Design & Finishing -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Image -->
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1000&auto=format&fit=crop" 
+                alt="Interior Design & Finishing"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+            <!-- Right: Content -->
+            <div class="order-1 md:order-2 space-y-6">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Five</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Interior Design & Finishing
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Transform interiors into stunning spaces that reflect your personality and lifestyle. Our design team creates harmonious environments combining aesthetics with functionality.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Custom design concepts and 3D visualization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Premium material selection and sourcing</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Complete finishing and detailing work</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 6: Landscape & Outdoor Design -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Content -->
+            <div class="space-y-6 order-1 md:order-1">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Six</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Landscape & Outdoor Design
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Create inviting outdoor spaces that enhance property value and lifestyle. Our landscape designers integrate nature with architecture for cohesive, beautiful exteriors.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Comprehensive landscape planning and design</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Hardscaping and softscape implementation</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Sustainable and eco-friendly solutions</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+            <!-- Right: Image -->
+            <div class="order-2 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1585505033514-4e13e839b57b?q=80&w=1000&auto=format&fit=crop" 
+                alt="Landscape & Outdoor Design"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+
+          <!-- Service 7: Project Management & Consultation -->
+          <div class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Image -->
+            <div class="order-2 md:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop" 
+                alt="Project Management & Consultation"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+            <!-- Right: Content -->
+            <div class="order-1 md:order-2 space-y-6">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Seven</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Project Management & Consultation
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Expert guidance from inception to completion. Our project management team ensures every detail is handled professionally, keeping your project on schedule and budget.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Complete project planning and scheduling</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Cost management and budget optimization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Quality assurance and regulatory compliance</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 8: Sustainable Building Solutions -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Content -->
+            <div class="space-y-6 order-1 md:order-1">
+              <span class="inline-block font-space text-xs text-brand-copper tracking-[0.5em] uppercase">Service Eight</span>
+              <h2 class="font-playfair text-3xl md:text-4xl text-brand-brown font-semibold uppercase tracking-tight">
+                Sustainable Building Solutions
+              </h2>
+              <p class="font-inter text-base text-brand-charcoal/70 leading-relaxed">
+                Build for the future with our green construction practices. We integrate sustainable materials and energy-efficient systems to create environmentally responsible projects.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">LEED certified green building practices</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Energy-efficient systems and renewables</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-copper mt-1">✓</span>
+                  <span class="font-inter text-brand-charcoal/80">Waste reduction and recycling programs</span>
+                </li>
+              </ul>
+              <button class="border-2 border-brand-copper text-brand-copper font-space px-8 py-4 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-copper hover:text-brand-ivory transition-all duration-300">
+                Learn More
+              </button>
+            </div>
+            <!-- Right: Image -->
+            <div class="order-2 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1569163139394-ce4ece9f7bce?q=80&w=1000&auto=format&fit=crop" 
+                alt="Sustainable Building Solutions"
+                class="w-full h-96 object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-16 bg-brand-brown text-brand-ivory">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+          <h2 class="font-playfair text-3xl md:text-4xl font-semibold uppercase tracking-tight">
+            Ready to Start Your Project?
+          </h2>
+          <p class="font-inter text-lg max-w-2xl mx-auto opacity-90">
+            Get in touch with our team to discuss your construction or development needs
+          </p>
+          <button class="bg-brand-copper text-brand-ivory font-space px-12 py-5 text-xs tracking-widest uppercase rounded-sm hover:bg-brand-beige hover:text-brand-brown transition-all shadow-xl">
+            Schedule Consultation
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-brand-charcoal text-brand-ivory py-12">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+              <h3 class="font-playfair text-lg font-semibold mb-4">Vinyas Constructions</h3>
+              <p class="font-inter text-sm text-brand-ivory/70">Building excellence across Karnataka since 1994.</p>
+            </div>
+            <div>
+              <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-sm font-inter text-brand-ivory/70">
+                <li><a href="index.html" class="hover:text-brand-copper transition-colors">Home</a></li>
+                <li><a href="index.html#about" class="hover:text-brand-copper transition-colors">About</a></li>
+                <li><a href="#services" class="hover:text-brand-copper transition-colors">Services</a></li>
+                <li><a href="index.html#process" class="hover:text-brand-copper transition-colors">Process</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-playfair text-lg font-semibold mb-4">Contact</h3>
+              <p class="font-inter text-sm text-brand-ivory/70">Email: info@viniyas.com</p>
+              <p class="font-inter text-sm text-brand-ivory/70">Phone: +91 XXXX XXXX XX</p>
+            </div>
+          </div>
+          <div class="border-t border-brand-ivory/20 pt-8 text-center text-sm font-inter text-brand-ivory/70">
+            <p>&copy; 2024 Vinyas Constructions & Developers. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close menu on link click
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      // Icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
